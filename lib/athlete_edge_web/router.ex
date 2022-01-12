@@ -19,7 +19,7 @@ defmodule AthleteEdgeWeb.Router do
 
     get "/", PageController, :index
 
-    resources "/workouts", WorkoutController
+    resources "/workouts", WorkoutController, except: [:new, :edit]
   end
 
   # Other scopes may use custom stacks.
